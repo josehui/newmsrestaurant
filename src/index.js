@@ -5,10 +5,13 @@ import Root from './Root';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+import Menu from './modules/menu/components/index';
+
+
 ReactDOM.render(
 	<Root>
 		<BrowserRouter>
-			<Route path="/" component={App} />
+			<Route path="/" component={Menu} />
 		</BrowserRouter>
 	</Root>, document.getElementById('root'));
 registerServiceWorker();
