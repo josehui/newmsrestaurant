@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 
+import Menu from './modules/menu/components/index';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="wrapper">
+				<Menu />
+				<div className="coluna-2">Coluna 2</div>
       </div>
     );
   }

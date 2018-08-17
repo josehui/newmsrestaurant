@@ -3,15 +3,13 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Root from './Root';
 import App from './App';
+import './index.scss';
 import registerServiceWorker from './registerServiceWorker';
-
-import Menu from './modules/menu/components/index';
-
 
 ReactDOM.render(
 	<Root>
 		<BrowserRouter>
-			<Route path="/" component={Menu} />
+			<Route path="/" component={App} />
 		</BrowserRouter>
 	</Root>, document.getElementById('root'));
 registerServiceWorker();
