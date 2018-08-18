@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Menu from './modules/menu/components/index';
+import Menu from './menu/components/index';
 
 class App extends Component {
   render() {

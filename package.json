@@ -66,12 +66,13 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-react": "^7.10.0"
   },
-  "jest": {
+  "jest": { 
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
     ],
     "setupFiles": [
-      "<rootDir>/config/polyfills.js"
+      "<rootDir>/config/polyfills.js",
+      "<rootDir>/src/setupTests.js"
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
