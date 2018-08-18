@@ -12,3 +12,4 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - [CSS Flexbox]
 - [Consumo de API]
 - [Arquitetura em modulos (REACT)]
+- [TDD whit Enzyme]
