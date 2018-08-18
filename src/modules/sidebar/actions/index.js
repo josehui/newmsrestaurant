@@ -1,8 +1,15 @@
-import { ADD_ITEM } from '../constants';
+import { ADD_ITEM, REMOVE_ITEM } from '../constants';
 
 export function addItem(item) {
 	return {
 		type: ADD_ITEM,
+		payload: item
+	}
+}
+
+export function removeItem(item){
+	return {
+		type: REMOVE_ITEM,
 		payload: item
 	}
 }

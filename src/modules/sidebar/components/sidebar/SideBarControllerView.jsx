@@ -11,7 +11,7 @@ const SideBarControllerView = (props) => {
 							return (
 							<li key={i} className="sidebar__orderlist--item" >
 								<span>{item.nome} - R$ {item.preco}</span>
-								<button className="btn btn-xs">X</button>
+								<button className="btn btn-xs" onClick={() => props.removeItem(i)} >X</button>
 							</li>)
 						}) : <li>Nada para mostrar aqui :(</li>}
 					</ul>

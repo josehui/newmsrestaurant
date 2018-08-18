@@ -13,3 +13,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - [Consumo de API]
 - [Arquitetura em modulos (REACT)]
 - [TDD whit Enzyme]
+
+[Online Demo](https://menu.marcelosousa.me/)
+
+![Marcelo Sousa](https://static.marcelosousa.me/assets/img/bg/marcelo-sousa-webdeveloper.jpg)

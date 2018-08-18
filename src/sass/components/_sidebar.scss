@@ -23,7 +23,7 @@
 
         &--item {
             display: flex;
-            padding: 5px 0 5px 0;
+            padding: 5px 5px;
             flex-direction: row;
             justify-content: space-between;
         }
@@ -32,7 +32,7 @@
     &--totalOrder {
         text-align: center;
         color: $color-primary;
-        padding: 1rem 0 0 .5rem;
+        padding: 1rem 1rem;
         font-weight: 700;
         border-top: 3px solid $color-primary;
     }

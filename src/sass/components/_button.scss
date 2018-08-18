@@ -12,10 +12,15 @@
         font-size: $default-font-size;
         border: none;
         cursor: pointer;
+        outline: none;
     }
 
     &-lg {
         padding: 1.5rem 4rem; 
+
+        @include respond(phone) {
+            padding: 1rem 3rem; 
+        }
     }
 
     &-md {
