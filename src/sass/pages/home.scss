@@ -2,7 +2,6 @@
 .wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-column: 1 / 1;
     grid-column-gap: 10px;
     grid-template-areas: "coluna-1 coluna-2";
     position: relative;
@@ -14,7 +13,7 @@
   
   .coluna-2 {
     grid-area: coluna-2;
-    background-color: #174691; 
+    background-color: #2D2D2D; 
   }
   
   @media (max-width: 769px) {
@@ -28,16 +27,6 @@
     .coluna-1 {
       margin-bottom: 50px;
     }
-    
-    .coluna-2 {
-      position: fixed;
-      left: 0;
-      height: 50px;
-      bottom: 0;
-      width: 100%;
-      background-color: #FFF;
-      border-top: 1px solid #999;
-    }
-       
+           
   }
   

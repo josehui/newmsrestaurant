@@ -1,0 +1,39 @@
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    &--title{
+        text-align: center;
+        padding: 2rem 0 0 .5rem;       
+        font-weight: 500;
+        font-size: 3rem;
+        color: $color-secondary;
+        border-bottom: 3px solid $color-secondary;   
+    }
+
+    &__orderlist {
+        width: 100%;
+        list-style-type: none;
+        align-self: center;
+        color: $color-secondary;
+        padding: 15px;
+        margin: 0;
+
+        &--item {
+            display: flex;
+            padding: 5px 0 5px 0;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &--totalOrder {
+        text-align: center;
+        color: $color-primary;
+        padding: 1rem 0 0 .5rem;
+        font-weight: 700;
+        border-top: 3px solid $color-primary;
+    }
+}

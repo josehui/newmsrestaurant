@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 import Menu from './menu/components/index';
+import Sidebar from './sidebar/components';
 
 class App extends Component {
   render() {
     return (
       <div className="wrapper">
 				<Menu />
-				<div className="coluna-2">Coluna 2</div>
+				<Sidebar />
       </div>
     );
   }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
+import { bindActionCreators } from 'redux'
 import { fetchMenu } from '../../actions';
+import { addItem } from '../../../sidebar/actions';
 import MenuControllerView from './MenuControllerView';
 
 class MenuController extends Component {
@@ -11,13 +12,12 @@ class MenuController extends Component {
 		}
 
 		render(){
-			return <MenuControllerView menu={this.props.menu} />
+			return <MenuControllerView menu={this.props.menu} addItem={this.props.addItem} />
 		}
 
 }
 
-function mapStateToProps(state){
-	return { menu: state.menu };
-}
+const mapStateToProps = state => ({ menu: state.menu });
+const mapDispatchToProps = dispatch => bindActionCreators({ fetchMenu, addItem }, dispatch);
 
-export default connect(mapStateToProps, {fetchMenu})(MenuController);
+export default connect(mapStateToProps, mapDispatchToProps)(MenuController);
