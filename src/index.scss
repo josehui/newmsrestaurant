@@ -65,16 +65,23 @@ body{
     height: 150px;
 
     &--img {
-      flex-grow: 0;
-      margin-top: 2px;
+      margin-left: 5px;
+      flex-grow: 0;    
+      border-radius: 50%;
     }
 
-    &--nome {
+    &-descricao {
       flex-grow: 5;
       padding-left: 20px; 
       
-      & h2 {
+      &--nome {
+        margin: 0;
         font-size: 3rem;
+        font-weight: 100;
+      }
+
+      &--preco {       
+        font-size: 2rem;
         font-weight: 100;
       }
     }

@@ -10,10 +10,11 @@ const MenuControllerView = (props) => {
 				{props.menu.map(item => {
 					return (
 						<li className="menu__lista" key={item.id}>
-							<div className="menu__lista--img">
-								<img src="https://avatars3.githubusercontent.com/u/5497196?s=460&v=4" height="150"/>
+							<img className="menu__lista--img" src={item.imagem} height="140"/>
+							<div className="menu__lista-descricao">
+								<h2 className="menu__lista-descricao--nome">{item.nome}</h2>
+								<span className="menu__lista-descricao--preco">R$ {item.preco}</span>
 							</div>
-							<div className="menu__lista--nome"><h2>Teste</h2></div>
 							<div className="menu__lista--btn"><button>Comprar</button></div>
 						</li>
 					)

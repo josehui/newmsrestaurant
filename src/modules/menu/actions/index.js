@@ -3,7 +3,7 @@ import { FETCH_MENU } from '../constants';
 
 export function fetchMenu(){
 
-	const response = axios.get('https://jsonplaceholder.typicode.com/comments');
+	const response = axios.get('https://marcelosousa.me/restaurant-menu/');
 
 	return {
 		type: FETCH_MENU,
