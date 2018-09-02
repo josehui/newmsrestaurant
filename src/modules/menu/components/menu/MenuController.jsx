@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux'
 import { fetchMenu } from '../../actions';
 import { addItem } from '../../../sidebar/actions';
 import MenuControllerView from './MenuControllerView';
+import PreloadView from '../preloader/PreloaderView';
 
 class MenuController extends Component {
 
@@ -12,7 +13,14 @@ class MenuController extends Component {
 		}
 
 		render(){
-			return <MenuControllerView menu={this.props.menu} addItem={this.props.addItem} />
+			if(this.props.menu.status_request === 'finish'){
+				return <MenuControllerView menu={this.props.menu.menu} addItem={this.props.addItem} />
+				//return <PreloadView />
+			} else {
+				return <PreloadView />
+			}
+
+
 		}
 
 }

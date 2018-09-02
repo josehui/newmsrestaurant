@@ -1,1 +1,4 @@
 export const FETCH_MENU = 'FETCH_MENU';
+export const REQUEST_STARTING = 'REQUEST_STARTING';
+export const REQUEST_ERROR = 'REQUEST_ERROR';
+export const REQUEST_FINISH = 'REQUEST_FINISH';
