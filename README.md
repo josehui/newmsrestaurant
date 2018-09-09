@@ -16,4 +16,4 @@ You can find the most recent version of this guide [here](https://github.com/fac
 
 [Online Demo](https://menu.marcelosousa.me/)
 
-![Marcelo Sousa](https://static.marcelosousa.me/assets/img/bg/marcelo-sousa-webdeveloper.jpg)
+![Marcelo Sousa](https://static1.marcelosousa.me/assets/img/bg/marcelo-sousa-webdeveloper.jpg)
