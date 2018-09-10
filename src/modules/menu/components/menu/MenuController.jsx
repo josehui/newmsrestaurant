@@ -15,7 +15,6 @@ class MenuController extends Component {
 		render(){
 			if(this.props.menu.status_request === 'finish'){
 				return <MenuControllerView menu={this.props.menu.menu} addItem={this.props.addItem} />
-				//return <PreloadView />
 			} else {
 				return <PreloadView />
 			}
