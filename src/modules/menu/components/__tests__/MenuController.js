@@ -8,7 +8,7 @@ import Root from '../../../../Root';
 
 let wrapped;
 
-beforeEach(() => {
+/*beforeEach(() => {
 	moxios.install();
 	moxios.stubRequest('https://marcelosousa.me/restaurant-menu/', {
 		status: 200,
@@ -17,6 +17,28 @@ beforeEach(() => {
 				id: 1,
 				nome: "Hamburguer",
 				preco:"25.00",
+				imagem: "https://static.marcelosousa.me/restaurant-menu/amburguer.jpg"
+			}
+		]
+	});
+
+	wrapped = mount(
+		<Root>
+			<MenuController />
+		</Root>
+	);
+
+});*/
+
+beforeEach(() => {
+	moxios.install();
+	moxios.stubRequest('https://marcelosousa.me/restaurant-menu/', {
+		status: 200,
+		response: [
+			{
+				id: 1,
+				nome: "Hamburguer",
+				preco: "25.00",
 				imagem: "https://static.marcelosousa.me/restaurant-menu/amburguer.jpg"
 			}
 		]

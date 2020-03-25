@@ -1,0 +1,5 @@
+{
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/5ad5b298-7c23-4f40-b849-d2b54e181f88/resourceGroups/vCare/providers/Microsoft.Web/sites/msrestaurant",
+    "appService.deploySubpath": ""
+}

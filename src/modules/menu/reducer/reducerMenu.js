@@ -8,7 +8,8 @@ const initState = {
 const reducerMenu  = (state = initState, action) => {
 	switch(action.type){
 		case FETCH_MENU:
-			const menu = action.payload.data;
+			console.log(action.payload);
+			const menu = action.payload;
 			return {...state, menu};
 		case REQUEST_STARTING:
 			return { ...state };

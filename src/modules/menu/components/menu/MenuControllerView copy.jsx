@@ -35,6 +35,7 @@ function Speech2text(callback) {
 		},
 		function (err) {
 			console.trace("err - " + err);
+
 			recognizer.close();
 			recognizer = undefined;
 			callback(err);
@@ -52,11 +53,11 @@ const MenuControllerView = (props) => {
 							<img className="menu__lista--img" src={item.imagem} alt={item.nome} />
 							<div className="menu__lista-descricao">
 								<h2 className="menu__lista-descricao--nome">{item.nome}</h2>
-								<img src={item.pIcon} width="20%" height="20%" alt="item icon" />
+								<img src={item.pIcon} width="20%" height="20%" alt="microphone icon" />
 							</div>
 							<div className="menu__lista--btn" align="right">
 								<Popup trigger={<button className="btn btn-lg btn-rp btn--red " onClick={() => {
-								console.log("hihi")}}><b>落order</b></button>} modal >
+								console.log("hihi")}}><b>落order</b></button>} modal position="center">
 									{close => (
 										<div className="modal">
 											<a className="close" onClick={close}>
@@ -74,10 +75,9 @@ const MenuControllerView = (props) => {
 												Speech2text(function(audio){
 													console.log(audio);
 													let resultField = document.getElementById("result");
-													//check if audio contains the item name
-													console.log(audio);
-													if(item.name.some(r=> audio.includes(r))){
-														resultField.innerHTML = "正確！答案係：" + item.name[0];
+													//cehck if audio contains the item name
+													if(audio.includes(item.name)){
+														resultField.innerHTML = "正確！答案係：" + item.name;
 														props.addItem(item);
 													}
 													else{
@@ -85,7 +85,7 @@ const MenuControllerView = (props) => {
 													}
 													
 												});
-												}}><img src={microphone_icon} width="90%" height="90%" alt="microphone icon"/></button>
+												}}><img src={'./microphone.png'} width="10vh" height="10vh" alt="microphone icon"/></button>
 											</div>
 										</div>
 										)}

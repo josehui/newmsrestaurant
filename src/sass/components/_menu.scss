@@ -18,6 +18,10 @@
       &--img {             
         border-radius: 50%;
         height: 140px;
+        width: 140px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        object-fit: cover;
 
         @include respond(tab-port) {
           height: 100px;

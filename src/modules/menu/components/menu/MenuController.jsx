@@ -6,11 +6,14 @@ import { addItem } from '../../../sidebar/actions';
 import MenuControllerView from './MenuControllerView';
 import PreloadView from '../preloader/PreloaderView';
 
+
+
 class MenuController extends Component {
 
 		componentDidMount(){
 			this.props.fetchMenu();
 		}
+		
 
 		render(){
 			if(this.props.menu.status_request === 'finish'){

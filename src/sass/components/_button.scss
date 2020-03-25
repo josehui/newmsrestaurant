@@ -14,6 +14,18 @@
         cursor: pointer;
         outline: none;
     }
+    &:active {
+        text-transform: uppercase;
+        text-decoration: none;       
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
 
     &-lg {
         padding: 1.5rem 4rem; 
@@ -23,8 +35,15 @@
         }
     }
 
+    &-rp {
+        margin-right: 20px;
+    }
     &-md {
-        
+        padding: 1rem 1rem; 
+
+        @include respond(phone) {
+            padding: 1rem 3rem; 
+        }
     }
 
     &-sm {
@@ -36,7 +55,7 @@
     }
    
 
-    &:hover {
+    /*&:hover {
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black, .2);
         
@@ -45,9 +64,10 @@
             opacity: 0;
         }
     
-    }
+    }*/
 
-    &:active,
+    &:active{background-color: #535753}
+    
     &:focus {
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black, .2);
@@ -61,6 +81,14 @@
             background-color: $color-secondary;
         }
     
+    }
+
+    &--grey {
+        color: rgb(133, 71, 71);
+
+        &::after {
+            background-color: $color-secondary;
+        }
     }
 
     &::after {
